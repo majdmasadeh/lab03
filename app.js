@@ -1,9 +1,30 @@
 console.log('Welcome to Cosmatica shop');
 alert('Welcometo Cosmatica shop');
-var userlist=prompt('Please type your list name ');
-var userproduct=prompt('(Please type your product)');
+//var userlist=prompt('Please type your list name ');
+//var userproduct=prompt('(Please type your product)');
+function username()
+  {
+    var name = prompt('welcome to cosmatica page ... enter your name');
+    return name ;
+  }
+alert ('welcome'+ username());
+
+function gender()
+{
+  var gen = prompt ( 'please enter your gender (femal , male)');
+  return gen;
+}
+alert ('welcome our sweeties '+gender())
+
+function userlist (prod){
+  var ask1 = prompt('Please type your product list name?');
+  return ask1;
+}
+userlist('lips');
+userlist('skincare');
 console.log('user list'+ userlist);
-console.log('user product' + userproduct);
+//console.log('user product' + userproduct)
+
 
 var productnumber= Number (prompt('how many products you want to order'));
 for (var i=1;i<=productnumber;i++){
